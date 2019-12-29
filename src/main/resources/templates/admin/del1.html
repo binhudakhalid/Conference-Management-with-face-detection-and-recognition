@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Security Check</title>
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/forum.css}" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+
+
+</head>
+<body>
+<!-- 
+<p>In Security Panel</p>
+<input type="button"  onclick="location.href='pyexe.html'" value="Runpython" >
+ -->
+<nav class="navbar is-white topNav">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../">
+            <img src="../images/bulma.png" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="topNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+         <marquee behavior="scroll" bgcolor="white" loop="-1" width="70%">
+   <i>
+      <font color="blue">
+        Welcome to Admin Panel, date : 
+        <strong>
+         <span id="time"></span>
+        </strong>           
+      </font>
+   </i>
+</marquee> 
+      </div>
+
+      <div id="topNav" class="navbar-menu">
+        
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                
+              </p>
+              <p class="control">
+                <a class="button is-small is-info is-outlined"
+                th:href="@{/logout}">
+                  <span class="icon">
+                    <i class="fa fa-user"></i>
+                  </span>
+                  <span>Logout</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar is-white">
+    <div class="container">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" th:href="@{/admin/home}">Home</a>
+          <a class="navbar-item"  th:href="@{/admin/checker}">To Security Panel</a>
+          
+          <a class="navbar-item is-active" href="#">About us</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <input class="input" type="text" placeholder="Search forum...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+<section class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <a class="button is-primary is-block is-alt is-large" th:href="@{/admin/checker}">To Security Panel</a>
+        
+      </div>
+      <div class="column is-4">
+        <div class="box content">
+        <!-- here -->
+        <div class="card">
+  <div class="card-image">
+  
+    
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+       
+      </div>
+      <div class="media-content">
+       
+      </div>
+    </div>
+   
+    <div class="content">
+<br>
+    <strong> All Entries Deleted Successfully</strong>
+     <br>
+   
+     
+    </div>
+  </div>
+</div>
+        </div></div>
+
+     
+    
+    
+    </div>
+    
+    
+  </div>
+  
+</div>
+          
+        <p></p>
+          
+        
+        
+        </div>
+        
+        
+      </div>
+      
+
+    </div>
+    
+  </section>
+  
+<script>var today = new Date();
+document.getElementById('time').innerHTML=today;</script>
+
+
+<footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Project By </strong> by <a href="https://github.com/binhudakhalid">Khalid and Umer</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT and Open Source</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/dansup/bulma-templates">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script async type="text/javascript" src="/js/bulma.js"></script>
+
+
+</body>
+</html>

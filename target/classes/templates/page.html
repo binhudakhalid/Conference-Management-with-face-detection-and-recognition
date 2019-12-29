@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/forum.css}" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" integrity="sha256-HEtF7HLJZSC3Le1HcsWbz1hDYFPZCqDhZa9QsCgVUdw=" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+  <nav class="navbar is-white topNav">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" >
+            <img src="../images/bulma.png" width="112" height="28">
+        </a>
+        <div class="navbar-burger burger" data-target="topNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="topNav" class="navbar-menu">
+        
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar is-white">
+    <div class="container">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active" href="#">Face Detection, Recognition and Conference Management </a>
+          
+          <a class="navbar-item"" th:href="@{/admin/about}" >About</a>
+        </div>
+       
+      </div>
+    </div>
+  </nav>
+  <section class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <a class="button is-primary is-block is-alt is-large" th:href="@{/login}">Welcome to Our FYP</a>
+       
+      </div>
+
+      <div class="column is-9">
+        <div class="box content">
+          
+         
+          
+          <article class="post">
+            <h4>     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>Menu</strong> </h4>
+            <span class="pull-right has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+            
+                    <a class="button is-primary is-block is-alt is-large" th:href="@{/login}">To Login As Admin</a>
+            <br>
+                    <a class="button is-primary is-block is-alt is-large" th:href="@{/welcome}">To Register for the Conference (with Face Recognition) </a>
+                         <br>       <a class="button is-primary is-block is-alt is-large" th:href="@{/welcomeqr}">To Register for the Conference (with QR code)</a>
+            
+           
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Project By </strong> by <a href="https://github.com/binhudakhalid">Khalid and Umer</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT and Open Source</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/dansup/bulma-templates">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script async type="text/javascript" src="/js/bulma.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</body>
+</html>

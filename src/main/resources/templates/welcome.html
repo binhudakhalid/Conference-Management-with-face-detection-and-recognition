@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Welcome Form</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/registration.css}" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<form >
+		<button class="btn btn-md btn-primary btn-block" type="Submit"><strong>THROUGH TO CONFRENCE</strong><br>Welcome Ladies And Gentmen <br>For registration enter you details</button>
+	</form>	
+	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<p></p>
+				<form autocomplete="off" action="#" th:action="@{/welcome}"
+				th:object="${people}" method="post" class="form-horizontal"
+					role="form" enctype="multipart/form-data">
+					<h2>Member Registration Form</h2>
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+								class="validation-message"></label>
+						<input type="text" th:field="*{name}" placeholder="Name"
+								class="form-control" /> 
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label	th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
+								class="validation-message"></label>
+							<input type="text" th:field="*{lastName}"
+								placeholder="Last Name" class="form-control" /> 
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+							<input type="text" th:field="*{email}" placeholder="Email"
+								class="form-control" /> <label
+								th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+								class="validation-message"></label>
+						</div>
+					</div>
+					
+					
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label	th:if="${#fields.hasErrors('educationLevel')}" th:errors="*{educationLevel}"
+								class="validation-message"></label>
+							<input type="text" th:field="*{educationLevel}"
+								placeholder="Education Level " class="form-control" /> 
+						</div>
+					</div>
+					
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label	th:if="${#fields.hasErrors('contactNumber')}" th:errors="*{contactNumber}"
+								class="validation-message"></label>
+							<input type="text" th:field="*{contactNumber}"
+								placeholder="Contact Number " class="form-control" /> 
+						</div>
+					</div>
+					<!-- //http://javapapers.com/core-java/java-qr-code/ -->
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+						<label	th:if="${#fields.hasErrors('nic')}" th:errors="*{nic}"
+								class="validation-message"></label>
+							<input type="text" th:field="*{nic}"
+								placeholder="National Identification Number " class="form-control" /> 
+						</div>
+					</div>
+					
+					
+					<table>
+				<tr>File to upload:</tr><br>
+				<tr><strong>Warning</strong>: Please upload Image with size less than 5 Mb and <br> </tr>
+				<tr>File name Shoud be your Fullname on NIC</tr>
+				<td><input type="file" name="file" /></td></tr>
+				<tr><td></td><td></td></tr>
+			</table>
+					
+					
+					<div class="form-group">
+						<div class="col-sm-9">
+							<button type="submit" class="btn btn-primary btn-block">Register for Conference</button>
+						</div>
+					</div>
+					
+					<span th:utext="${successMessage}"></span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					</form>
+				
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
