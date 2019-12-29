@@ -1,4 +1,4 @@
-# Conference-Management-with-face-detection-and-recognition
+# Conference-Management with face detection and recognition
 It was a web-based application intended for Conference Management and making it easier for
 organizations to manage their events. We used the Java Spring framework to implement Web
 Application and for face detection and recognition, we used Python’s deep learning libraries and MySQL
@@ -15,8 +15,8 @@ as a database.
 6) Dlib 
 
 # Step To Run:
-1) Import project in Spring Sts.
-2) Run main java class
+1) Import project in Spring Sts. (optional)
+2) Run main java class or run via command line.
 3) In web application, go to Security panel to train our model and all the file in know_folder are then trained.
 4) To start, we have to click on start button to start face dectection and recognition.
 
