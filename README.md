@@ -7,9 +7,9 @@ as a database.
 * Presentation, ER Diagram and Report are in Documents Folder.
 
 # Diagram
-* ![Alt text](ArchitectureDiagrams.jpg?raw=true "Title")
+ ![Alt text](ArchitectureDiagrams.jpg?raw=true "Title")
 
-* ![Alt text](Documents/Presentation-raw/1497e024ce9c052b1c29e12331f4ff59-15.jpg?raw=true "Title")
+ ![Alt text](Documents/Presentation-raw/1497e024ce9c052b1c29e12331f4ff59-15.jpg?raw=true "Title")
 
 
 # Prerequisites:
