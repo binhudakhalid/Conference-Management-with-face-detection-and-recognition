@@ -1,10 +1,13 @@
-# Conference-Management with face detection and recognition
+# Conference Management with face detection and recognition
 It was a web-based application intended for Conference Management and making it easier for
 organizations to manage their events. We used the Java Spring framework to implement Web
 Application and for face detection and recognition, we used Python’s deep learning libraries and MySQL
 as a database.
 
 * Presentation, ER Diagram and Report are in Documents Folder.
+
+![Alt text](Documents/Presentation-raw/1497e024ce9c052b1c29e12331f4ff59-15.jpg?raw=true "Title")
+
 
 # Prerequisites:
 1) Install Java (JRE and JDK)
